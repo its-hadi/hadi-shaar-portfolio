@@ -107,6 +107,27 @@
       border-bottom: none;
     }
 
+    .project-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 15px;
+    }
+
+    .project-icon {
+      width: 65px;
+      height: 65px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      background: #f9fafb;
+      flex-shrink: 0;
+    }
+
+    .project-title h3 {
+      margin: 0;
+    }
+
     figure {
       margin: 15px 0;
     }
@@ -152,6 +173,26 @@
       background: #111827;
       color: white;
       margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      section {
+        padding: 22px;
+      }
+
+      .project-icon {
+        width: 55px;
+        height: 55px;
+      }
     }
   </style>
 </head>
@@ -225,12 +266,10 @@
       <h2>Projects and Experiences</h2>
 
       <article>
-        <h3>GreenStepEmployee Capstone Project</h3>
-
-        <figure>
-          <img src="images/greenstepemployee.png" alt="GreenStepEmployee capstone project screenshot">
-          <figcaption>Senior capstone project focused on technology, sustainability, and the common good.</figcaption>
-        </figure>
+        <div class="project-title">
+          <img src="images/greenstepemployee.png" alt="GreenStepEmployee project icon" class="project-icon">
+          <h3>GreenStepEmployee Capstone Project</h3>
+        </div>
 
         <p>
           <strong>Description:</strong> GreenStepEmployee was my senior capstone project at the University of St. Thomas.
@@ -264,12 +303,10 @@
       </article>
 
       <article>
-        <h3>University of St. Thomas VR Lab</h3>
-
-        <figure>
-          <img src="images/vr-lab.png" alt="University of St. Thomas VR Lab project image">
-          <figcaption>VR development work involving immersive applications, training, and 360-degree media.</figcaption>
-        </figure>
+        <div class="project-title">
+          <img src="images/vr-lab.png" alt="University of St. Thomas VR Lab icon" class="project-icon">
+          <h3>University of St. Thomas VR Lab</h3>
+        </div>
 
         <p>
           <strong>Description:</strong> As a VR Development Intern at the University of St. Thomas VR Lab, I worked on
@@ -303,12 +340,10 @@
       </article>
 
       <article>
-        <h3>Taxfully Software Engineer Internship</h3>
-
-        <figure>
-          <img src="images/taxfully.png" alt="Taxfully software engineer internship image">
-          <figcaption>Software engineering internship focused on website maintenance, performance, SEO, and content updates.</figcaption>
-        </figure>
+        <div class="project-title">
+          <img src="images/taxfully.png" alt="Taxfully internship icon" class="project-icon">
+          <h3>Taxfully Software Engineer Internship</h3>
+        </div>
 
         <p>
           <strong>Description:</strong> During my Software Engineer Internship at Taxfully, I developed and maintained
@@ -341,12 +376,10 @@
       </article>
 
       <article>
-        <h3>Star Map Application</h3>
-
-        <figure>
-          <img src="images/star-map.png" alt="Star Map Application screenshot">
-          <figcaption>3D star map application using Swift, Python, and Unity3D for real-time sky exploration.</figcaption>
-        </figure>
+        <div class="project-title">
+          <img src="images/star-map.png" alt="Star Map Application icon" class="project-icon">
+          <h3>Star Map Application</h3>
+        </div>
 
         <p>
           <strong>Description:</strong> The Star Map Application is a 3D star map app that enables real-time sky exploration
@@ -371,12 +404,10 @@
       </article>
 
       <article>
-        <h3>Coffee Shop VR Application</h3>
-
-        <figure>
-          <img src="images/coffee-shop-vr.png" alt="Coffee Shop VR Application screenshot">
-          <figcaption>VR application designed to support conversational Spanish learning through an immersive environment.</figcaption>
-        </figure>
+        <div class="project-title">
+          <img src="images/coffee-shop-vr.png" alt="Coffee Shop VR Application icon" class="project-icon">
+          <h3>Coffee Shop VR Application</h3>
+        </div>
 
         <p>
           <strong>Description:</strong> The Coffee Shop VR Application was a virtual reality project designed to teach
@@ -401,12 +432,10 @@
       </article>
 
       <article>
-        <h3>University of St. Thomas Virtual Tour</h3>
-
-        <figure>
-          <img src="images/st-thomas-virtual-tour.png" alt="University of St. Thomas Virtual Tour screenshot">
-          <figcaption>Interactive virtual campus tour featuring multimedia, clickable hotspots, and accessible navigation.</figcaption>
-        </figure>
+        <div class="project-title">
+          <img src="images/st-thomas-virtual-tour.png" alt="University of St. Thomas Virtual Tour icon" class="project-icon">
+          <h3>University of St. Thomas Virtual Tour</h3>
+        </div>
 
         <p>
           <strong>Description:</strong> The University of St. Thomas Virtual Tour was a project focused on creating a
