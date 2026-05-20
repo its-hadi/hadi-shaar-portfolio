@@ -4,75 +4,443 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hadi Shaar Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #d1d5db;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #111827;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      color: #111827;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #1f2937;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    article {
+      margin-bottom: 35px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    article:last-child {
+      border-bottom: none;
+    }
+
+    figure {
+      margin: 15px 0;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 850px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      display: block;
+    }
+
+    figcaption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e5e7eb;
+      color: #111827;
+      padding: 5px 10px;
+      margin: 4px 4px 4px 0;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .resume-image {
+      width: 100%;
+      max-width: 850px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hadi Shaar</h1>
-  <h2>Senior Portfolio</h2>
+  <header>
+    <h1>Hadi Shaar</h1>
+    <p>Computer Science Student | University of St. Thomas</p>
+    <p>Software Development, VR, Web Applications, Databases, and Human-Centered Technology</p>
+  </header>
 
   <nav>
-    <a href="#about">About Me</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#projects">Projects and Experiences</a> |
-    <a href="#resume">Resume</a> |
-    <a href="#reflection">Reflection</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects and Experiences</a>
+    <a href="#resume">Resume</a>
   </nav>
 
-  <hr>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
 
-<section id="about">
-  <h2>About Me</h2>
+      <p>
+        My name is Hadi Shaar, and I am a Computer Science student at the University of St. Thomas.
+        I am majoring in Computer Science with a minor in Business Administration with a Marketing focus.
+        My interests include software development, virtual reality, web applications, databases, business,
+        and using technology to create practical solutions for real people.
+      </p>
 
-  <p>
-    My name is Hadi Shaar, and I am a Computer Science student at the University of St. Thomas.
-    I am interested in software development, databases, web applications, business, and using technology
-    to solve real problems.
-  </p>
+      <p>
+        My computer science background has helped me develop technical skills in programming, web development,
+        database design, debugging, and project development. My liberal arts education and business background
+        have also helped me grow in communication, teamwork, ethical thinking, marketing, and understanding how
+        technology affects people and communities.
+      </p>
 
-  <p>
-    My computer science background has helped me build technical skills in programming, problem solving,
-    database design, and project development. My liberal arts education has also helped me grow in
-    communication, teamwork, ethical thinking, and understanding how technology affects people and communities.
-  </p>
+      <p>
+        You should hire me because I bring both technical ability and a practical, human-centered mindset.
+        I am hardworking, adaptable, and willing to learn. I care about building solutions that are clear,
+        reliable, useful, and connected to real-world needs.
+      </p>
+    </section>
 
-  <p>
-    You should hire me because I am hardworking, adaptable, and willing to learn. I bring both technical
-    ability and a practical mindset, and I care about building solutions that are useful, clear, and reliable.
-  </p>
-</section>
+    <section id="skills">
+      <h2>Skills</h2>
 
-<section id="skills">
-  <h2>Skills</h2>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Programming Languages: C++, C#, Java, C, Python, CSS, JavaScript, SQL, HTML, MATLAB</li>
+        <li>Web Development: HTML, CSS, JavaScript, WordPress, GitHub Pages</li>
+        <li>Databases: SQL, database design, relational concepts</li>
+        <li>VR and Media Tools: 3DVista, Unity, Mistika VR, Blender, Adobe Premiere Pro</li>
+        <li>Marketing and Analytics Tools: Google Analytics, Yoast SEO</li>
+        <li>Other Tools: Microsoft Office, GitHub, video editing tools, music production tools</li>
+      </ul>
 
-  <h3>Technical Skills</h3>
-  <ul>
-    <li>Programming: Java, C++, JavaScript, HTML, CSS</li>
-    <li>Web Development: Next.js, React, GitHub Pages</li>
-    <li>Databases: SQL, PostgreSQL, Prisma, database design</li>
-    <li>Tools: Git, GitHub, VS Code, Lucidchart</li>
-    <li>Concepts: algorithms, operating systems, relational algebra, software design</li>
-  </ul>
+      <h3>Professional Competencies</h3>
+      <ul>
+        <li>Problem solving</li>
+        <li>Communication</li>
+        <li>Teamwork</li>
+        <li>Teaching and training</li>
+        <li>Project management</li>
+        <li>Leadership</li>
+        <li>Adaptability</li>
+        <li>Ethical thinking</li>
+      </ul>
+    </section>
 
-  <h3>Professional Skills</h3>
-  <ul>
-    <li>Problem solving</li>
-    <li>Communication</li>
-    <li>Teamwork</li>
-    <li>Adaptability</li>
-    <li>Project planning</li>
-    <li>Ethical thinking</li>
-  </ul>
-</section>
+    <section id="projects">
+      <h2>Projects and Experiences</h2>
 
-  <section id="projects">
-    <h2>Projects and Experiences</h2>
-  </section>
+      <article>
+        <h3>GreenStepEmployee Capstone Project</h3>
 
-  <section id="resume">
-    <h2>Resume</h2>
-  </section>
+        <figure>
+          <img src="https://placehold.co/900x450?text=GreenStepEmployee+Capstone+Project" alt="GreenStepEmployee capstone project screenshot placeholder">
+          <figcaption>Senior capstone project focused on technology, sustainability, and the common good.</figcaption>
+        </figure>
 
-  <section id="reflection">
-    <h2>Holistic Signature Work Reflection</h2>
-  </section>
+        <p>
+          <strong>Description:</strong> GreenStepEmployee was my senior capstone project at the University of St. Thomas.
+          The project focused on creating a software solution connected to sustainability, employee participation,
+          and organizational impact. This project allowed me to apply computer science skills to a real-world problem
+          while also thinking about how technology can support the common good.
+        </p>
+
+        <p>
+          <strong>My Contribution:</strong> I contributed to the planning, design, and development of the application.
+          My work included helping shape the database structure, improving the user interface, organizing project goals,
+          and connecting the technical work to the purpose of the project.
+        </p>
+
+        <p>
+          <strong>SOAR Reflection:</strong><br>
+          <strong>Situation:</strong> Our team needed to build a meaningful capstone project connected to a real-world issue.<br>
+          <strong>Obstacle:</strong> We had to balance technical requirements, deadlines, teamwork, and user needs.<br>
+          <strong>Action:</strong> I helped develop the application, organize features, and connect our technical decisions to the project goals.<br>
+          <strong>Result:</strong> I gained stronger experience in software development, databases, teamwork, communication, and building technology with social impact.
+        </p>
+
+        <p>
+          <span class="tag">capstone</span>
+          <span class="tag">sustainability</span>
+          <span class="tag">web development</span>
+          <span class="tag">database design</span>
+          <span class="tag">common good</span>
+          <span class="tag">teamwork</span>
+        </p>
+      </article>
+
+      <article>
+        <h3>University of St. Thomas VR Lab</h3>
+
+        <figure>
+          <img src="https://placehold.co/900x450?text=University+of+St.+Thomas+VR+Lab" alt="University of St. Thomas VR Lab project screenshot placeholder">
+          <figcaption>VR development work involving immersive applications, training, and 360-degree media.</figcaption>
+        </figure>
+
+        <p>
+          <strong>Description:</strong> As a VR Development Intern at the University of St. Thomas VR Lab, I worked on
+          interactive virtual reality projects using tools such as 3DVista, Unity, C#, and other VR technologies.
+          My work included developing VR applications, managing lab projects, training others on VR tools and headsets,
+          and helping direct and edit VR film content.
+        </p>
+
+        <p>
+          <strong>My Contribution:</strong> I helped manage projects in the lab, supported the development of interactive
+          VR applications, taught others how to use VR tools, and contributed to the production and editing process for
+          VR content.
+        </p>
+
+        <p>
+          <strong>SOAR Reflection:</strong><br>
+          <strong>Situation:</strong> The VR Lab needed projects that were both technically functional and easy for users to understand.<br>
+          <strong>Obstacle:</strong> VR tools can be complex, and users often need clear instructions to feel comfortable using them.<br>
+          <strong>Action:</strong> I developed VR content, trained users, tested interactions, and improved the clarity of the experience.<br>
+          <strong>Result:</strong> I improved both my technical VR skills and my ability to communicate complex tools in a simple way.
+        </p>
+
+        <p>
+          <span class="tag">virtual reality</span>
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">3DVista</span>
+          <span class="tag">training</span>
+          <span class="tag">communication</span>
+        </p>
+      </article>
+
+      <article>
+        <h3>Taxfully Software Engineer Internship</h3>
+
+        <figure>
+          <img src="https://placehold.co/900x450?text=Taxfully+Software+Engineer+Internship" alt="Taxfully software engineer internship screenshot placeholder">
+          <figcaption>Software engineering internship focused on website maintenance, performance, SEO, and content updates.</figcaption>
+        </figure>
+
+        <p>
+          <strong>Description:</strong> During my Software Engineer Internship at Taxfully, I developed and maintained
+          the company website using HTML, CSS, and JavaScript. I also managed the company website backend using WordPress,
+          updated tax-related content and blog posts, and worked with the marketing team on SEO strategies.
+        </p>
+
+        <p>
+          <strong>My Contribution:</strong> I improved page load time, maintained website content, updated WordPress pages,
+          and collaborated with the marketing team using tools such as Yoast SEO and Google Analytics.
+        </p>
+
+        <p>
+          <strong>Failure → Learning → Change:</strong> One challenge I experienced was learning how small website changes
+          could affect performance, user experience, and SEO. At first, I focused mainly on making updates work visually.
+          Over time, I learned to also think about speed, search visibility, structure, and the business purpose behind
+          each update. This changed how I approach web development because I now think about both the technical side and
+          the user/business impact.
+        </p>
+
+        <p>
+          <span class="tag">software engineering</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">WordPress</span>
+          <span class="tag">SEO</span>
+          <span class="tag">Google Analytics</span>
+        </p>
+      </article>
+
+      <article>
+        <h3>Star Map Application</h3>
+
+        <figure>
+          <img src="https://placehold.co/900x450?text=Star+Map+Application" alt="Star Map Application screenshot placeholder">
+          <figcaption>3D star map application using Swift, Python, and Unity3D for real-time sky exploration.</figcaption>
+        </figure>
+
+        <p>
+          <strong>Description:</strong> The Star Map Application is a 3D star map app that enables real-time sky exploration
+          using gyroscope and touch navigation. The project involved accurate star positioning, user interaction, debugging,
+          and performance optimization.
+        </p>
+
+        <p>
+          <strong>My Contribution:</strong> I developed parts of the application using Swift, Python, and Unity3D.
+          I worked on improving responsiveness, smoothing interaction, and debugging performance issues so the user
+          experience felt more natural.
+        </p>
+
+        <p>
+          <span class="tag">Swift</span>
+          <span class="tag">Python</span>
+          <span class="tag">Unity3D</span>
+          <span class="tag">3D application</span>
+          <span class="tag">debugging</span>
+          <span class="tag">performance</span>
+        </p>
+      </article>
+
+      <article>
+        <h3>Coffee Shop VR Application</h3>
+
+        <figure>
+          <img src="https://placehold.co/900x450?text=Coffee+Shop+VR+Application" alt="Coffee Shop VR Application screenshot placeholder">
+          <figcaption>VR application designed to support conversational Spanish learning through an immersive environment.</figcaption>
+        </figure>
+
+        <p>
+          <strong>Description:</strong> The Coffee Shop VR Application was a virtual reality project designed to teach
+          conversational Spanish in an interactive setting. This project connected computer science with education,
+          language learning, and user experience design.
+        </p>
+
+        <p>
+          <strong>My Contribution:</strong> I helped develop the VR application using tools such as 3DVista, Mistika VR,
+          and Blender. I also captured and edited 360-degree footage to create a more realistic and engaging learning experience.
+        </p>
+
+        <p>
+          <span class="tag">virtual reality</span>
+          <span class="tag">Spanish</span>
+          <span class="tag">education</span>
+          <span class="tag">3DVista</span>
+          <span class="tag">Mistika VR</span>
+          <span class="tag">Blender</span>
+          <span class="tag">interdisciplinary</span>
+        </p>
+      </article>
+
+      <article>
+        <h3>University of St. Thomas Virtual Tour</h3>
+
+        <figure>
+          <img src="https://placehold.co/900x450?text=University+of+St.+Thomas+Virtual+Tour" alt="University of St. Thomas Virtual Tour screenshot placeholder">
+          <figcaption>Interactive virtual campus tour featuring multimedia, clickable hotspots, and accessible navigation.</figcaption>
+        </figure>
+
+        <p>
+          <strong>Description:</strong> The University of St. Thomas Virtual Tour was a project focused on creating a
+          user-friendly virtual campus tour. The goal was to help users explore key campus locations through interactive
+          features, multimedia content, and clickable hotspots.
+        </p>
+
+        <p>
+          <strong>My Contribution:</strong> I helped develop the virtual tour experience, integrate interactive elements,
+          and make the project accessible across devices. This project strengthened my understanding of user experience,
+          accessibility, media design, and technical implementation.
+        </p>
+
+        <p>
+          <span class="tag">virtual tour</span>
+          <span class="tag">user experience</span>
+          <span class="tag">accessibility</span>
+          <span class="tag">multimedia</span>
+          <span class="tag">interactive design</span>
+          <span class="tag">education</span>
+        </p>
+      </article>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+
+      <figure>
+        <img src="resume.png" alt="Hadi Shaar resume" class="resume-image">
+        <figcaption>My current resume.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hadi Shaar | Senior Portfolio | University of St. Thomas</p>
+  </footer>
 </body>
 </html>
